@@ -43,7 +43,7 @@ For Windows users:
 For Linux/MacOS
 You will have to recompile all the codes since the output is in .exe format. You wont be able to run the .bat file, so you will have to run all the codes individually.
 
-For the merge sort multi threaded code I have used ```#include <windows.h>``` and ```#include <process.h>``` libraries which are only available for Windows. You will have to modify the code using the ```#include <pthread.h>``` library
+For the merge sort multi threaded code I have used ```#include <windows.h>``` and ```#include <process.h>``` libraries which are only available for Windows. You will have to modify the code using the ```#include <pthread.h>``` library.
 
 ## Contributing
 
