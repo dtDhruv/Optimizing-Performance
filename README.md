@@ -22,9 +22,8 @@ The performance comparison section presents benchmark results of the CPU and GPU
 ## Requirements
 
 To run this project, you need the following:
-
--A CPU with at least 4 cores available for multithreading.
 - A compatible NVIDIA GPU with CUDA support.
+- A CPU with at least 4 cores available for multithreading.
 - NVIDIA CUDA Toolkit installed on your system.
 - C++ compiler with CUDA support (e.g., NVCC).
 
