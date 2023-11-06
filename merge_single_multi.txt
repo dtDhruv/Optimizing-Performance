@@ -1,0 +1,57 @@
+Merge Sort:
+    Merge Sort is a popular divide-and-conquer sorting algorithm that efficiently sorts an array by recursively dividing it into two halves, sorting each half, and then merging the sorted halves to produce the final sorted array.
+
+Data Structure Used: Arrays
+
+Time Complexity:
+
+Single-threaded Merge Sort: O(n log n)
+Multi-threaded Merge Sort: O(n log n)
+Implementation:
+
+Single-threaded Merge Sort:
+    Algorithm: Traditional recursive implementation of Merge Sort running on a single thread.
+    Time Complexity: O(n log n).
+    Details: The algorithm divides the array into two halves, recursively sorts each half, and then merges them. The single-threaded version performs these operations sequentially.
+
+Multi-threaded Merge Sort:
+    Algorithm: Parallel implementation of Merge Sort utilizing multiple threads.
+    Time Complexity: O(n log n).
+    Details: The algorithm divides the array into two halves, and each half is sorted concurrently by separate threads. The sorted halves are then merged in parallel, taking advantage of multi-core processors to improve performance.
+
+Comparison:
+
+Both single-threaded and multi-threaded Merge Sort have the same time complexity of O(n log n). However, the multi-threaded version can potentially achieve better performance on multi-core systems by parallelizing the sorting process.
+
+The efficiency of multi-threaded Merge Sort depends on factors such as the size of the array, the number of available cores, and the overhead of managing multiple threads. In scenarios where the array is large and there are enough cores, the multi-threaded version may demonstrate better performance compared to the single-threaded version.
+
+It's essential to consider the trade-offs, as the multi-threaded version introduces overhead related to thread synchronization and management. The actual speedup achieved by multi-threading may vary based on the hardware and the characteristics of the input data.
+
+----------------------------------------------------------------------------------------------
+| Aspect                           | Single-threaded Merge Sort | Multi-threaded Merge Sort  |
+|----------------------------------|----------------------------|----------------------------|
+| **Time Complexity**              | O(n log n)                 | O(n log n)                 |
+|                                  |                            |                            |
+| **Performance**                  | Similar for small to       | Potential improvement on   |
+|                                  | moderately sized arrays    | multi-core systems for     |
+|                                  |                            | large arrays               |
+|                                  |                            |                            |
+| **Factors Influencing            | Array size, characteristics| Array size, number of      |
+| Performance**                    | of data, hardware          | available cores, thread    |
+|                                  | architecture               | management overhead        |
+|                                  |                            |                            |
+| **Parallelization**              | Not applicable             | Utilizes parallelism on    |
+|                                  |                            | multi-core systems         |
+|                                  |                            |                            |
+| **Potential Speedup**            | Limited by single core     | Depends on available       |
+|                                  |                            | cores and array size       |
+|                                  |                            |                            |
+| **Overheads**                    | Minimal                    | Thread synchronization,    |
+|                                  |                            | management, potential      |
+|                                  |                            | contention                 |
+|                                  |                            |                            |
+| **Trade-offs**                   | Simplicity of              | Potential speedup on       |
+|                                  | implementation             | large arrays vs.           |
+|                                  |                            | overhead and complexity    |
+|                                  |                            | of parallelization         |
+----------------------------------------------------------------------------------------------

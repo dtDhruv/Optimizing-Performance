@@ -1,0 +1,21 @@
+Binary Search Tree (BST):
+    Insertion:
+        Algorithm: Recursive insertion in a BST.
+        Time Complexity: O(log n) on average, O(n) in the worst case (for unbalanced trees).
+        Implementation: CPU-based recursive approach.
+
+    Searching:
+        Algorithm: Recursive search in a BST.
+        Time Complexity: O(log n) on average, O(n) in the worst case (for unbalanced trees).
+        Implementation: CPU-based recursive approach.
+
+Hash Table:
+    Insertion:
+        Algorithm: Using a hash function to determine the index and handling collisions.
+        Time Complexity: O(1) on average (constant time), but may vary with collisions.
+        Implementation: CPU-based hash table implementation.
+
+    Searching:
+        Algorithm: Using a hash function to determine the index and handling collisions during search.
+        Time Complexity: O(1) on average (constant time), but may vary with collisions.
+        Implementation: CPU-based hash table implementation.
